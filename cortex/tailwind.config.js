@@ -1,8 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}", "*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        ubuntu: ['"Ubuntu"', 'sans-serif'],
+        codystar: ['"Codystar"', 'cursive'],
+        outfit: ['"Outfit"', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
+        poppins: ['"Poppins"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

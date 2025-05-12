@@ -48,12 +48,7 @@ export function Sidebar({ className }) {
       name: "Calendar",
       href: "/calendar",
       icon: Calendar,
-    },
-    {
-      name: "Settings",
-      href: "/settings",
-      icon: Settings,
-    },
+    }
   ]
 
   return (
@@ -72,8 +67,8 @@ export function Sidebar({ className }) {
             className="flex items-center gap-2"
           >
             <Brain className="h-6 w-6 text-blue-400" />
-            <h1 className="text-xl font-bold">
-              <GradientText>AI Hub</GradientText>
+            <h1 className="text-xl font-extrabold font-montserrat tracking-widest">
+              <GradientText>Cortex</GradientText>
             </h1>
           </motion.div>
         )}

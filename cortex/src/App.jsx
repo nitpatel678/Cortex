@@ -6,7 +6,7 @@ import DashboardPage from "./pages/DashboardPage.jsx"
 import PersonalOSPage from "./pages/PersonalOSPage.jsx"
 import ResearchPage from "./pages/ResearchPage.jsx"
 import MeetingsPage from "./pages/MeetingsPage.jsx"
-import SettingsPage from "./pages/SettingsPage.jsx"
+import CalendarPage from "./pages/CalendarPage.jsx"
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/personal-os" element={<PersonalOSPage />} />
         <Route path="/research" element={<ResearchPage />} />
         <Route path="/meetings" element={<MeetingsPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/calendar" element={<CalendarPage />} />
       </Route>
     </Routes>
   )

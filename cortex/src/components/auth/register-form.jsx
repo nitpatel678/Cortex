@@ -35,19 +35,19 @@ export function RegisterForm() {
       <GlassPanel className="w-full">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-3xl font-bold font-outfit">
               <GradientText gradient="cyan-blue">Create Account</GradientText>
             </h1>
-            <p className="text-muted-foreground">Sign up for your AI productivity platform</p>
+            <p className="text-muted-foreground font-poppins">Sign up for your AI productivity platform</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
+              <Label htmlFor="name" className="font-ubuntu">Full Name</Label>
               <Input id="name" placeholder="John Doe" required className="bg-background/50 border-white/10" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="font-ubuntu">Email</Label>
               <Input
                 id="email"
                 placeholder="name@example.com"
@@ -57,13 +57,13 @@ export function RegisterForm() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password" className="font-ubuntu">Password</Label>
               <Input id="password" type="password" required className="bg-background/50 border-white/10" />
             </div>
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500"
+              className="w-full font-outfit bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500"
               disabled={isLoading}
             >
               {isLoading ? (
@@ -85,22 +85,18 @@ export function RegisterForm() {
               <span className="w-full border-t border-white/10" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
+              <span className="bg-card px-2 text-muted-foreground font-poppins">Or continue with</span>
             </div>
           </div>
 
           <div className="flex gap-2">
-            <GradientButton variant="outline" className="w-full" onClick={() => navigate("/dashboard")}>
-              <GithubIcon className="h-4 w-4 mr-2" />
-              GitHub
-            </GradientButton>
-            <GradientButton variant="outline" className="w-full" onClick={() => navigate("/dashboard")}>
+            <GradientButton variant="outline" className="w-full font-poppins" onClick={() => navigate("/dashboard")}>
               <MailIcon className="h-4 w-4 mr-2" />
               Google
             </GradientButton>
           </div>
 
-          <div className="text-center text-sm">
+          <div className="text-center text-sm font-poppins">
             Already have an account?{" "}
             <Link to="/login" className="text-blue-400 hover:text-blue-300">
               Sign in

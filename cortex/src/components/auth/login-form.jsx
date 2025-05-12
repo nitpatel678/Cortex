@@ -35,15 +35,15 @@ export function LoginForm() {
       <GlassPanel className="w-full">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-3xl font-bold font-outfit">
               <GradientText>Welcome Back</GradientText>
             </h1>
-            <p className="text-muted-foreground">Sign in to your AI productivity platform</p>
+            <p className="text-muted-foreground font-poppins">Sign in to your AI productivity platform</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="font-ubuntu">Email</Label>
               <Input
                 id="email"
                 placeholder="name@example.com"
@@ -54,7 +54,7 @@ export function LoginForm() {
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="password" className="font-ubuntu">Password</Label>
                 <a href="#" className="text-xs text-blue-400 hover:text-blue-300">
                   Forgot password?
                 </a>
@@ -64,7 +64,7 @@ export function LoginForm() {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500"
+              className="w-full font-outfit bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500"
               disabled={isLoading}
             >
               {isLoading ? (
@@ -86,22 +86,18 @@ export function LoginForm() {
               <span className="w-full border-t border-white/10" />
             </div>
             <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
+              <span className="bg-card px-2 text-muted-foreground font-poppins">Or continue with</span>
             </div>
           </div>
 
           <div className="flex gap-2">
-            <GradientButton variant="outline" className="w-full" onClick={() => navigate("/dashboard")}>
-              <GithubIcon className="h-4 w-4 mr-2" />
-              GitHub
-            </GradientButton>
-            <GradientButton variant="outline" className="w-full" onClick={() => navigate("/dashboard")}>
+            <GradientButton variant="outline" className="w-full font-poppins" onClick={() => navigate("/dashboard")}>
               <MailIcon className="h-4 w-4 mr-2" />
               Google
             </GradientButton>
           </div>
 
-          <div className="text-center text-sm">
+          <div className="text-center text-sm font-poppins">
             Don't have an account?{" "}
             <Link to="/register" className="text-blue-400 hover:text-blue-300">
               Sign up
