@@ -15,11 +15,11 @@ export function AgentCard({ title, description, icon, href, glowColor = "blue" }
       <FuturisticCard glowColor={glowColor} className="h-full">
         <div className="flex items-center gap-2 mb-4">
           <div className="p-2 rounded-lg bg-gray-800/50">{icon}</div>
-          <h2 className="font-semibold">{title}</h2>
+          <h2 className="font-semibold font-outfit">{title}</h2>
         </div>
-        <p className="text-gray-400 text-sm mb-4">{description}</p>
+        <p className="text-gray-400 text-sm mb-4 font-ubuntu">{description}</p>
         <Link to={href}>
-          <GradientButton className="w-full">
+          <GradientButton className="w-full font-poppins">
             Open Agent
             <ArrowRight className="ml-2 h-4 w-4" />
           </GradientButton>

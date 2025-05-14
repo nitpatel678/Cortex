@@ -32,7 +32,7 @@ export default function DashboardPage() {
         <SummaryCard title="Today's Summary" icon={<Sun className="h-5 w-5 text-yellow-400" />} glowColor="blue">
           <div className="space-y-4">
             <div className="text-sm text-gray-400">{formatDate(currentTime)}</div>
-            <div className="space-y-2">
+            <div className="space-y-2 font-ubuntu">
               <div className="flex justify-between text-sm">
                 <span>Weather</span>
                 <span className="text-blue-400">72°F, Sunny</span>
@@ -58,7 +58,7 @@ export default function DashboardPage() {
           icon={<Calendar className="h-5 w-5 text-purple-400" />}
           glowColor="purple"
         >
-          <div className="space-y-3">
+          <div className="space-y-3 font-ubuntu">
             <div className="p-2 rounded-lg bg-gray-800/50 text-sm">
               <div className="font-medium">Weekly Team Sync</div>
               <div className="text-xs text-gray-400">10:00 AM - 11:00 AM</div>
@@ -75,7 +75,7 @@ export default function DashboardPage() {
         </SummaryCard>
 
         <SummaryCard title="Recent Emails" icon={<Mail className="h-5 w-5 text-cyan-400" />} glowColor="cyan">
-          <div className="space-y-3">
+          <div className="space-y-3 font-ubuntu">
             <div className="p-2 rounded-lg bg-gray-800/50 text-sm">
               <div className="font-medium">Project Update</div>
               <div className="text-xs text-gray-400">from: sarah@example.com</div>
@@ -96,7 +96,7 @@ export default function DashboardPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-xl font-semibold mt-8 mb-4"
+        className="text-xl font-semibold mt-8 mb-4 font-outfit"
       >
         Your AI Agents
       </motion.h2>

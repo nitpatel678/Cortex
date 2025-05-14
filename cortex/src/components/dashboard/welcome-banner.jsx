@@ -11,10 +11,10 @@ export function WelcomeBanner({ userName }) {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl -ml-32 -mb-32" />
 
         <div className="relative z-10">
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">
+          <h1 className="text-2xl md:text-3xl font-bold mb-2 font-outfit">
             Welcome back, <GradientText>{userName}</GradientText>
           </h1>
-          <p className="text-gray-400 max-w-2xl">
+          <p className="text-gray-400 max-w-2xl font-ubuntu">
             Your AI productivity suite is ready to help you organize your day, research topics, and manage your
             meetings. What would you like to accomplish today?
           </p>
